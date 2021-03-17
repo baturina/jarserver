@@ -16,5 +16,3 @@ install:
 build_script:
   - ./gradlew test --info -Dselenide.headless=true
 
-on_finish:
-      - ps: Stop-Process -Id $App.Id  # оставливаем SUT
